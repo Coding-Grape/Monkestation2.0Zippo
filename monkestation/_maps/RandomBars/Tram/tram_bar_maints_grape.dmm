@@ -125,12 +125,17 @@
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/iron/white/side,
 /area/station/service/kitchen)
-"dA" = (
-/obj/structure/cable,
-/obj/machinery/power/floodlight{
-	anchored = 1
+"dw" = (
+/obj/structure/closet/secure_closet/freezer/cream_pie,
+/obj/effect/turf_decal/tile/red/opposingcorners,
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
 	},
-/turf/open/floor/catwalk_floor,
+/obj/effect/landmark/start/clown,
+/turf/open/floor/iron,
+/area/station/service/theater)
+"dA" = (
+/turf/open/floor/wood,
 /area/station/service/theater)
 "dB" = (
 /obj/structure/rack,
@@ -399,6 +404,12 @@
 	},
 /turf/open/floor/plating,
 /area/station/commons/lounge)
+"lv" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/station/service/theater)
 "lz" = (
 /obj/machinery/duct,
 /obj/structure/disposalpipe/segment{
@@ -429,6 +440,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/grimy,
 /area/station/commons/lounge)
+"mO" = (
+/obj/effect/mapping_helpers/broken_floor,
+/turf/open/floor/wood,
+/area/station/service/theater)
 "mP" = (
 /obj/machinery/newscaster/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -494,6 +509,7 @@
 "oj" = (
 /obj/structure/rack,
 /obj/effect/spawner/random/maintenance/three,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating,
 /area/station/service/theater)
 "on" = (
@@ -534,7 +550,6 @@
 /area/station/service/theater)
 "oL" = (
 /obj/structure/chair/wood,
-/obj/effect/landmark/start/clown,
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /obj/effect/turf_decal/tile/blue/opposingcorners{
 	dir = 1
@@ -737,6 +752,14 @@
 	},
 /turf/open/floor/plating,
 /area/station/service/bar)
+"sA" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/obj/structure/cable,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/catwalk_floor,
+/area/station/service/theater)
 "sK" = (
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor,
@@ -791,7 +814,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
+/turf/open/floor/wood,
 /area/station/service/theater)
 "vf" = (
 /obj/structure/chair/plastic{
@@ -1035,8 +1058,7 @@
 /area/station/service/kitchen)
 "BF" = (
 /obj/structure/chair/wood,
-/obj/structure/cable,
-/turf/open/floor/catwalk_floor,
+/turf/open/floor/plating,
 /area/station/service/theater)
 "BK" = (
 /obj/structure/ladder,
@@ -1728,7 +1750,7 @@
 /area/station/asteroid)
 "Ul" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
+/turf/open/floor/wood,
 /area/station/service/theater)
 "Um" = (
 /obj/structure/chair/stool/directional/south,
@@ -1762,13 +1784,20 @@
 /area/station/commons/lounge)
 "Vq" = (
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/window/reinforced/spawner/directional/east,
 /obj/machinery/atm,
+/obj/item/shard{
+	pixel_x = 14
+	},
+/obj/item/stack/rods{
+	pixel_y = -4
+	},
+/obj/effect/decal/cleanable/glass,
 /turf/open/floor/iron/grimy,
 /area/station/commons/lounge)
 "Vs" = (
 /obj/structure/rack,
 /obj/item/wrench,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating,
 /area/station/service/theater)
 "Vv" = (
@@ -1782,6 +1811,12 @@
 	},
 /turf/open/floor/iron/grimy,
 /area/station/commons/lounge)
+"VM" = (
+/obj/structure/chair/wood{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/station/service/theater)
 "VU" = (
 /turf/closed/wall,
 /area/station/service/bar)
@@ -1827,6 +1862,13 @@
 	dir = 1
 	},
 /area/station/service/kitchen)
+"WH" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plating,
+/area/station/service/theater)
 "WP" = (
 /obj/effect/mapping_helpers/airlock/access/all/engineering/maintenance,
 /obj/machinery/duct,
@@ -2566,7 +2608,7 @@ Ud
 Ud
 Ud
 CG
-Ap
+dw
 oL
 Lw
 mC
@@ -2574,7 +2616,7 @@ wu
 ED
 Ul
 uV
-cr
+VM
 cr
 FY
 Ul
@@ -2597,15 +2639,15 @@ Ap
 jW
 oI
 mC
-QE
+sA
 QX
 nS
-ED
+mO
 qm
-QX
+dA
 hd
 qF
-td
+WH
 MO
 QC
 QC
@@ -2625,14 +2667,14 @@ bh
 sR
 mC
 QE
-sK
-BF
-sK
 dA
+BF
 QX
+dA
+dA
 nx
 QX
-td
+lv
 MO
 QC
 QC
