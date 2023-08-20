@@ -908,7 +908,7 @@
 /obj/effect/spawner/random/trash/hobo_squat,
 /obj/structure/mannequin/wood{
 	name = "Marty the mannequin";
-	desc = "The bane of sattelite array operators everywhere.";
+	desc = "The bane of radio telescope array operators everywhere.";
 	max_integrity = 600
 	},
 /turf/open/floor/plating,
