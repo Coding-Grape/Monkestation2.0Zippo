@@ -87,6 +87,11 @@
 /obj/machinery/deepfryer,
 /turf/open/floor/iron/cafeteria,
 /area/station/service/kitchen)
+"cd" = (
+/obj/structure/disposalpipe/segment,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/station/commons/lounge)
 "cl" = (
 /obj/machinery/vending/cigarette,
 /turf/open/floor/plating,
@@ -503,7 +508,9 @@
 /obj/machinery/power/floodlight{
 	anchored = 1;
 	name = "inefficient floodlight";
-	light_setting_list = list(0,5,7,9)
+	light_setting_list = list(0,5,7,9);
+	light_color = "#FFF0BE";
+	light_power = 1.2
 	},
 /turf/open/floor/catwalk_floor,
 /area/station/service/kitchen)
@@ -566,6 +573,7 @@
 /obj/effect/turf_decal/tile/blue/opposingcorners{
 	dir = 1
 	},
+/obj/effect/landmark/start/clown,
 /turf/open/floor/iron,
 /area/station/service/theater)
 "oO" = (
@@ -749,6 +757,10 @@
 /obj/effect/spawner/random/trash/food_packaging,
 /turf/open/floor/plating,
 /area/station/service/bar)
+"si" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/station/service/kitchen)
 "sk" = (
 /turf/closed/wall,
 /area/station/service/kitchen)
@@ -828,6 +840,7 @@
 "uN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/food/egg_smudge,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/cafeteria,
 /area/station/service/kitchen)
 "uV" = (
@@ -835,6 +848,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood,
 /area/station/service/theater)
 "vf" = (
@@ -867,6 +881,10 @@
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor,
 /area/station/service/theater)
+"wv" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/grimy,
+/area/station/commons/lounge)
 "wx" = (
 /obj/structure/grille/broken,
 /obj/item/shard{
@@ -899,6 +917,10 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/plating,
 /area/station/commons/lounge)
+"xD" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood,
+/area/station/service/bar)
 "xR" = (
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/wood,
@@ -930,7 +952,6 @@
 /obj/effect/turf_decal/tile/blue/opposingcorners{
 	dir = 1
 	},
-/obj/effect/landmark/start/clown,
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
@@ -1325,12 +1346,21 @@
 	},
 /turf/open/floor/plating,
 /area/station/service/kitchen)
+"GA" = (
+/obj/effect/mapping_helpers/broken_floor,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/station/service/theater)
 "GB" = (
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
 /turf/open/floor/plating,
 /area/station/commons/lounge)
+"GC" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/station/service/theater)
 "GE" = (
 /obj/machinery/duct,
 /obj/effect/decal/cleanable/dirt,
@@ -1339,6 +1369,7 @@
 /area/station/service/kitchen)
 "GN" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/cafeteria,
 /area/station/service/kitchen)
 "GO" = (
@@ -1390,6 +1421,7 @@
 /area/station/service/kitchen)
 "Ht" = (
 /obj/structure/cable,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood,
 /area/station/service/bar)
 "Ik" = (
@@ -1399,6 +1431,10 @@
 	dir = 1
 	},
 /area/station/service/kitchen)
+"Iq" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/station/commons/lounge)
 "IA" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -1447,6 +1483,10 @@
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plating,
 /area/station/commons/lounge)
+"JV" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/cafeteria,
+/area/station/service/kitchen)
 "JW" = (
 /obj/structure/table/wood,
 /obj/machinery/chem_dispenser/drinks{
@@ -1525,6 +1565,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/grimy,
 /area/station/commons/lounge)
 "ME" = (
@@ -1563,6 +1604,10 @@
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/plating,
 /area/station/service/bar)
+"Nn" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood,
+/area/station/service/theater)
 "Np" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/decal/cleanable/food/egg_smudge,
@@ -2073,6 +2118,11 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/catwalk_floor,
 /area/station/service/theater)
+"XU" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/cafeteria,
+/area/station/service/kitchen)
 "Yg" = (
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/wood,
@@ -2215,7 +2265,7 @@ cu
 cu
 nk
 iq
-EG
+wv
 VL
 MO
 MO
@@ -2270,7 +2320,7 @@ Vq
 EG
 iq
 Vd
-EG
+wv
 wK
 MO
 QC
@@ -2376,7 +2426,7 @@ QR
 hC
 Ys
 Pc
-QM
+Iq
 wa
 hC
 mY
@@ -2403,7 +2453,7 @@ ad
 ap
 PS
 yh
-PS
+cd
 yh
 yh
 pa
@@ -2418,8 +2468,8 @@ lU
 sk
 SO
 VY
-ed
-ed
+JV
+XU
 qu
 aW
 RO
@@ -2458,7 +2508,7 @@ lH
 VU
 mp
 iY
-MS
+xD
 UD
 VU
 Bi
@@ -2529,7 +2579,7 @@ Co
 Ct
 Rl
 XA
-qu
+si
 ox
 KT
 wM
@@ -2670,7 +2720,7 @@ sk
 mC
 mC
 mP
-ED
+GA
 Pc
 AF
 Ys
@@ -2728,7 +2778,7 @@ QX
 nS
 xR
 qm
-dA
+Nn
 hd
 qF
 tV
@@ -2860,10 +2910,10 @@ TE
 mC
 pe
 sK
-QX
+GC
 sd
 QX
-QX
+GC
 QX
 QX
 qE
