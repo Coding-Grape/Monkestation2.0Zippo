@@ -141,10 +141,7 @@
 /obj/machinery/airalarm/directional/north,
 /obj/effect/decal/cleanable/food/flour,
 /obj/item/reagent_containers/condiment/milk,
-/obj/item/reagent_containers/condiment/milk,
 /obj/item/reagent_containers/condiment/soymilk,
-/obj/item/reagent_containers/condiment/soymilk,
-/obj/item/storage/fancy/egg_box,
 /obj/item/storage/fancy/egg_box,
 /turf/open/floor/iron/cafeteria,
 /area/station/service/kitchen)
@@ -496,6 +493,12 @@
 /obj/effect/mapping_helpers/burnt_floor,
 /turf/open/floor/plating,
 /area/station/commons/lounge)
+"na" = (
+/obj/machinery/duct,
+/obj/structure/disposalpipe/segment,
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/plating,
+/area/station/service/kitchen)
 "nk" = (
 /obj/item/radio/intercom/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
@@ -634,8 +637,9 @@
 "pe" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/structure/rack,
-/obj/effect/spawner/random/decoration/paint,
 /obj/structure/sign/poster/contraband/random/directional/north,
+/obj/effect/spawner/random/decoration/paint,
+/obj/item/airlock_painter/decal/tile,
 /turf/open/floor/plating,
 /area/station/service/theater)
 "pu" = (
@@ -1367,6 +1371,7 @@
 	id = "playerscantreadthis";
 	name = "Kitchen Counter Shutters"
 	},
+/obj/item/food/urinalcake,
 /turf/open/floor/plating,
 /area/station/service/kitchen)
 "GB" = (
@@ -1955,6 +1960,7 @@
 /obj/structure/rack,
 /obj/item/wrench,
 /obj/machinery/light/small/directional/east,
+/obj/effect/spawner/random/decoration/glowstick,
 /turf/open/floor/plating,
 /area/station/service/theater)
 "Vv" = (
@@ -2010,6 +2016,22 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/cafeteria,
 /area/station/service/kitchen)
+"WF" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/box/matches{
+	pixel_y = 1;
+	pixel_x = -4
+	},
+/obj/effect/spawner/random/entertainment/cigarette_pack{
+	pixel_x = 8;
+	pixel_y = 5
+	},
+/obj/effect/spawner/random/entertainment/cigarette_pack{
+	pixel_x = 8;
+	pixel_y = 5
+	},
+/turf/open/floor/iron,
+/area/station/service/bar)
 "WP" = (
 /obj/effect/mapping_helpers/airlock/access/all/engineering/maintenance,
 /obj/machinery/duct,
@@ -2584,7 +2606,7 @@ Gy
 fZ
 fW
 Xu
-dV
+WF
 Yg
 he
 Ov
@@ -2685,7 +2707,7 @@ oW
 jO
 TU
 So
-So
+na
 kA
 WA
 Dj
