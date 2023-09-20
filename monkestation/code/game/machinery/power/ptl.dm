@@ -50,6 +50,7 @@
 /obj/machinery/power/transmission_laser/Initialize(mapload)
 	. = ..()
 
+	register_context()
 	range = get_dist(get_step(get_front_turf(), dir), get_edge_target_turf(get_front_turf(), dir))
 	var/turf/back_turf = get_step(get_back_turf(), turn(dir, 180))
 	terminal = locate(/obj/machinery/power/terminal) in back_turf
@@ -65,6 +66,7 @@
 	if(length(laser_effects))
 		destroy_lasers()
 	blocked_objects = null
+
 /obj/machinery/power/transmission_laser/proc/get_back_turf()
 	//this is weird as i believe byond sets the bottom left corner as the source corner like
 	// x-x-x
@@ -117,6 +119,18 @@
 		. += "charge_[charge_level]"
 		. += emissive_appearance(icon, "charge_[charge_level]", src)
 
+
+/obj/machinery/power/transmission_laser/add_context(
+	atom/source,
+	list/context,
+	obj/item/held_item,
+	mob/living/user,
+)
+	. = ..()
+	context[SCREENTIP_CONTEXT_LMB] = "Turn [turned_on ? "Off" : "On"] the PTL."
+	context[SCREENTIP_CONTEXT_RMB] = "Turn [firing ? "Off" : "On"] the PTL's Firing mechanism."
+	return CONTEXTUAL_SCREENTIP_SET
+
 ///returns the charge level from [0 to 6]
 /obj/machinery/power/transmission_laser/proc/return_charge()
 	if(!output_level)
@@ -134,7 +148,7 @@
 /obj/machinery/power/transmission_laser/attack_hand_secondary(mob/user, list/modifiers)
 	. = ..()
 	firing = !firing
-	to_chat(user, span_notice("You turn the firing mode on the [src] to [turned_on ? "On" : "Off"]."))
+	to_chat(user, span_notice("You turn the firing mode on the [src] to [firing ? "On" : "Off"]."))
 	update_appearance()
 	if(length(laser_effects) && !firing)
 		addtimer(CALLBACK(src, PROC_REF(destroy_lasers)), 5 SECONDS)
