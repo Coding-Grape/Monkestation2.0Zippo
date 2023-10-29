@@ -5,5 +5,14 @@
 	centerspawner = FALSE
 	template_height = 25
 	template_width = 30
-	weight = 8
+	weight = 0
+	station_name = "Tramstation"
+/datum/map_template/random_room/random_bar/tramstation_base
+	name = "Edited tram bar"
+	room_id = "tram_bar_maints_grape"
+	mappath = "monkestation/_maps/RandomBars/Tram/tram_bar_maints_grape.dmm"
+	centerspawner = FALSE
+	template_height = 25
+	template_width = 30
+	weight = 100
 	station_name = "Tramstation"
